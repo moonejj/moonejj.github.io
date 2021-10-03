@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla Challenge</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <!-- Login form -->
+  <div class="login">
+    <form class="hidden" id="login-form">
+      <input type="text" required maxlength="15" placeholder="당신의 이름은">
+      <input type="submit" value="Log in">
+    </form>
+    <div class="userinfo">
+      <p id="greeting" class="hidden heart"></p>
+      <img id="profile" class="hidden" src="images/0.png">
+    </div>
+  </div>
+  <!-- Clock & Date -->
+  <h2 id="clock"></h2>
+  <h2 id="date"></h2>
+  <!-- Todo -->
+  <div class="todo">
+    <form id="todo-form">
+      <input type="text" placeholder="오늘 할일 추가하기" required>
+    </form>
+    <ul id="todo-list"></ul>
+  </div>
+  <!-- Weather & Local-->
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <!-- Icon -->
+  <div class="app">
+    <div><a href="https://www.naver.com"><img src="images/9.png" alt=""></a></div>
+    <div class="youtube"><a href="https://www.youtube.com"><img src="images/10.png" alt=""></a></div>
+    <div><a href="https://www.google.com"><img src="images/11.png" alt=""></a></div>
+    <div><a href="https://www.pinterest.co.kr"><img src="images/12.png" alt=""></a></div>
+    <div class="nomad"><a href="https://nomadcoders.co"><img src="images/13.svg" alt=""></a></div>
+    <div><a href="https://soundcloud.com"><img src="images/14.png" alt=""></a></div>
+  </div>
+  <!-- Quote -->
+  <div id="quote">
+    <span></span>
+    <span></span>
+  </div>
+
+  <script src="src/greeting.js"></script>
+  <script src="src/clock.js"></script>
+  <script src="src/todo.js"></script>
+  <script src="src/background.js"></script>
+  <script src="src/weather.js"></script>
+  <script src="src/quotes.js"></script>
+</body>
+</html>
